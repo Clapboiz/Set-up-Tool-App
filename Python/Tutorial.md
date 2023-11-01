@@ -34,4 +34,22 @@
 	C:\cuda\lib\x64
 	D:\Set up app\Python
 	C:\Program Files\NVIDIA Corporation\Nsight Compute 2022.3.0\
-```		
+```
+
+### conflict libs
+
+![image](https://github.com/Clapboiz/Set-up-Tool-App/assets/112185647/490793f9-a9e1-41d4-8f9d-4fe7f5005e9f)
+```
+	example: keras tensorflow-estimator tensorboard tensorflow-gpu tensorflow-intel conflicted
+
+
+	## Solved:
+
+ 	pip uninstall keras tensorflow-estimator tensorboard tensorflow-gpu tensorflow-intel
+	pip install --upgrade pip
+	## clear cache
+	pip cache purge
+	pip install tensorflow keras tensorflow-gpu==2.10.1		
+```
+![image](https://github.com/Clapboiz/Set-up-Tool-App/assets/112185647/4fa34b05-fb9f-4fc0-a5ad-dcbdce76d694)
+
