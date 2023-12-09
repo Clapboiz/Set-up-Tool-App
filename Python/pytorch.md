@@ -1,5 +1,7 @@
 # Install pytorch gpu
 
+Python 3.8
+
 Cuda 11.8
 
 **Install by command in cmd**
@@ -12,3 +14,6 @@ Cuda 11.8
 import torch
 torch.cuda.is_available()
 ```
+
+**Installed successfully**
+![image](https://github.com/Clapboiz/Set-up-Tool-App/assets/112185647/47dd9941-ef6b-46dc-9dea-73ebd4fec097)
