@@ -57,5 +57,6 @@ Check Cuda version
 	pip install tensorflow keras tensorflow-gpu==2.10.1		
 ```
 **Installed successfully**
+
 ![image](https://github.com/Clapboiz/Set-up-Tool-App/assets/112185647/4fa34b05-fb9f-4fc0-a5ad-dcbdce76d694)
 
