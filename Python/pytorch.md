@@ -1,8 +1,15 @@
 # Install pytorch gpu
 
+**Require**
+```
 Python 3.8
-
 Cuda 11.8
+```
+**Please uninstall torch before you install pytorch gpu**
+
+```
+pip uninstall torch torchvision torchaudio
+```
 
 **Install by command in cmd**
 
