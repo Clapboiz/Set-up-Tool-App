@@ -1,3 +1,4 @@
+# Install tensorflow-gpu
 ### Request:
 ```
 	python 3.8.10
@@ -6,6 +7,10 @@
 	The rest of setuptools & wheel, install the latest version
 	Must add the above to the path env system
 ```
+Check Cuda version
+
+![image](https://github.com/Clapboiz/Set-up-Tool-App/assets/112185647/424c88ed-2378-4543-ba74-3eb78b41acbe)
+
 ### Install command: pip install tensorflow-gpu or pip install tensorflow-gpu --pre
 
 ### Check: tensorflow-gpu work?
