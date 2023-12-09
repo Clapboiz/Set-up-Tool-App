@@ -58,5 +58,9 @@ Check Cuda version
 ```
 **Installed successfully**
 
-![image](https://github.com/Clapboiz/Set-up-Tool-App/assets/112185647/4fa34b05-fb9f-4fc0-a5ad-dcbdce76d694)
+```
+	import tensorflow as tf
+	print("Num GPUs Available: ", len(tf.config.list_physical_devices('GPU')))
+```
 
+![image](https://github.com/Clapboiz/Set-up-Tool-App/assets/112185647/4fa34b05-fb9f-4fc0-a5ad-dcbdce76d694)
