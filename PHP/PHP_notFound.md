@@ -10,4 +10,7 @@ Following my steps:
 4.
 ![image-1](https://github.com/Clapboiz/Set-up-Tool-App/assets/112185647/1c232af3-8bea-4b8a-9f67-472d30b38d41)
 
+5.
+![image](https://github.com/Clapboiz/Set-up-Tool-App/assets/112185647/6d73cb95-d6fb-43f6-8ecc-59d03b0c10a3)
+
 **Done**
