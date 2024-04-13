@@ -19,3 +19,7 @@ Set-ExecutionPolicy Restricted
 
 Enter "Y" to confirm the change of the enforcement policy.
 
+### To delete 1 folder in windows with admin role
+```
+Start-Process PowerShell -Verb RunAs -ArgumentList "Remove-Item -Path 'D:\folder\folder' -Force -Recurse"
+```
