@@ -12,7 +12,14 @@ you create a new path, any name you want. I encourage you create name the same a
 
 `Path1`, `Path2`, `Pathx` (x is a number). 
 
-After you convert all your paths to path 1,2,3,... (each path <2047 characters), please edit `Path` -> `%Path1%; %Path2%; %Pathx%`
+After you convert all your paths to path 1,2,3,... (each path <2047 characters), please edit `Path` -> `%Path1%;%Path2%;%Pathx%`
+
+Then type this command in cmd
+
+```
+set Path=%Path2%;%Path3%
+```
+
 ## SOLUTION 2
 You type `Windows + R` and type `regedit`, then you access the path `Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment` and add your path.
 
