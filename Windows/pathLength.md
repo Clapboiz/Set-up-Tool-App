@@ -28,3 +28,4 @@ You type `Windows + R` and type `regedit`, then you access the path `Computer\HK
 # REFERENCES
 [1]. https://answers.microsoft.com/en-us/windows/forum/all/cant-edit-environment-variable-over-2047/ac713701-b1b4-4f6f-b2c7-5bb9282addb9
 [2]. https://superuser.com/questions/1385854/how-do-i-bypass-restrictions-on-the-length-of-the-path-variable
+[3]. https://stackoverflow.com/questions/19287379/how-do-i-add-to-the-windows-path-variable-using-setx-having-weird-problems
