@@ -14,7 +14,16 @@ you create a new path, any name you want. I encourage you create name the same a
 
 After you convert all your paths to path 1,2,3,... (each path <2047 characters), please edit `Path` -> `%Path1%;%Path2%;%Pathx%`
 
-Then type this command in cmd
+Open powershell with administration to make this change permanent
+
+```
+$Path2 = $env:Path2
+$Path3 = $env:Path3
+$env:PATH += ";$Path2;$Path3"
+[System.Environment]::SetEnvironmentVariable("PATH", $env:Path, [System.EnvironmentVariableTarget]::Machine)
+```
+
+Then type this command in cmd (Optional)
 
 ```
 set Path=%Path2%;%Path3%
