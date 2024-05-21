@@ -10,3 +10,23 @@ git reset --hard HEAD~
 | `git reset --soft <commit_id>`   | Moves HEAD to a specific commit, keeps changes in the index and working directory.          | - Preserves changes so you can continue editing and commit without having to re-add them.                                                                                               | - Requires manual steps to commit changes again after using this command.                                                        |
 | `git reset --mixed <commit_id>`  | Moves HEAD to a specific commit, keeps changes in the working directory but not in the index. | - Allows previewing changes before adding them to the index for committing. - Does not remove changes from the working directory.                                                         | - Requires adding changes to the index and committing manually after using this command.                                       |
 | `git reset --hard <commit_id>`   | Moves HEAD to a specific commit, removes all uncommitted changes in the index and working directory. | - Reverts to the state of the project at a specific commit without keeping any changes.                                                                                                  | - Loss of uncommitted changes that cannot be recovered after using this command.                                                 |
+
+# Untrack the files from Git
+If you have a file named `access.log` and `error.log` and when you have a `.gitignore` file and it still pushes to github, this means that the cache of these two files has not been removed.
+
+Now you just need to follow what I suggest
+
+Navigate to the root directory of your project and use the git rm --cached command to untrack these files.
+
+```
+git rm --cached docker/nginx/nginx_log/access.log
+git rm --cached docker/nginx/nginx_log/error.log
+```
+
+```
+git commit -m "Remove log files from being tracked"
+```
+
+```
+git push origin <branch-name>
+```
