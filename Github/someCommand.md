@@ -19,8 +19,8 @@ Now you just need to follow what I suggest
 Navigate to the root directory of your project and use the git rm --cached command to untrack these files.
 
 ```
-git rm --cached docker/nginx/nginx_log/access.log
-git rm --cached docker/nginx/nginx_log/error.log
+git rm --cached <yourFile or yourFolder>
+git rm --cached <yourFile or yourFolder>
 ```
 
 ```
