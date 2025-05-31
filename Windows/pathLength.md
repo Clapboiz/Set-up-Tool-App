@@ -34,6 +34,28 @@ You type `Windows + R` and type `regedit`, then you access the path `Computer\HK
 
 ![image](https://github.com/Clapboiz/Set-up-Tool-App/assets/112185647/afa545ef-80ce-4caa-a09f-83b695709bb8)
 
+## REFRESH ENV
+You added the path to the registry, but the environment variable hasn't been refreshed yet
+
+When you manually add a path to the registry at:
+
+```
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment
+```
+
+Windows does not apply the change immediately. To make it take effect, you have two options:
+
+```
+OPTION 1: Restart your computer
+```
+
+```
+OPTION 2: You can do this from PowerShell (run as Administrator):
+$env:Path = [System.Environment]::GetEnvironmentVariable("Path", "Machine")
+```
+
+Then test it again with your command
+
 # REFERENCES
 [1]. https://answers.microsoft.com/en-us/windows/forum/all/cant-edit-environment-variable-over-2047/ac713701-b1b4-4f6f-b2c7-5bb9282addb9
 
